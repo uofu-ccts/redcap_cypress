@@ -9,7 +9,7 @@ executors:
       image: ubuntu-2404:2024.11.1 # Machine image updates: https://circleci.com/developer/machine/image/ubuntu-2404
       resource_class: large
     environment:
-      REDCAP_VERSION: "15.5.7"
+      REDCAP_VERSION: "16.0.11"
 
 workflows:
   version: 2
@@ -34,7 +34,7 @@ commands:
           name: Build the REDCap Image
           command: |
             cd << parameters.dir >>
-            git clone --branch utah-v15.5.7 https://github.com/uofu-ccts/redcap_docker ../redcap_docker
+            git clone --branch utah-v16.0.11 https://github.com/uofu-ccts/redcap_docker ../redcap_docker
             cd ../redcap_docker
             git log -1 # Include current commit in build logs
             git apply docker-compose.xdebug-volume-patch
