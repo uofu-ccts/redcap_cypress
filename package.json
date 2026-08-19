@@ -2,8 +2,8 @@
   "name": "redcap_cypress",
   "description": "This repository is a template to assist you in writing **automated tests for REDCap**.",
   "dependencies": {
-    "rctf": "github:uof-ccts/rctf#main",
-    "redcap_rsvc": "github:uof-ccts/redcap_rsvc#utah-v16.0.11"
+    "rctf": "github:uofu-ccts/rctf#main",
+    "redcap_rsvc": "github:uofu-ccts/redcap_rsvc#utah-v16.0.11"
   },
   "peerDependencies": {
     "cypress": "^15"
